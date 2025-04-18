@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <title>бурито.ру</title>
+			<meta charset="utf-8"/>
+    </head>
+    <body>
+        <br>
+        <form>
+            <label>адрес email</label>
+            <input type="text" name="email">
+            <br>
+            <label>выберите категорию</label>
+            <select name="category" required>
+                <option value="interior">интерьер</option>
+                <option value="tableware">посуда</option>
+                <option value="housetech">бытовая техника</option>
+            </select>
+            <br>
+            <label>заголовок</label>
+            <input type="text" name="header">
+            <br>
+            <label>описание</label>
+            <input type="text" name="text">
+            <br>
+            <button type="submit">добавить объявление</button>
+        </form>
+        <br>
+        <div class="advertice-table">
+            <h3>Список объявлений:</h3>
+            <table>
+                <tr>
+                    <th>Категория</th>
+                    <th>Название</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
