@@ -13,7 +13,7 @@
                 <td><b>Описание</b></td>
                 <td><b>Категория</b></td>
             </tr>
-            <?php foreach ($advertisements as $ad): ?>
+            <?php foreach (require 'get.php' as $ad): ?>
                 <tr>
                     <td><?=$ad['email']?></td>
                     <td><?=$ad['title']?></td>
@@ -26,7 +26,7 @@
 
     <div>
         <h4>Добавить свое объявление:</h4>
-        <form method="post">
+        <form method="post", action="post.php">
             email: <input type="email" name="email"><br>
             Название: <input type="text" name="title"><br>
             Категория:
